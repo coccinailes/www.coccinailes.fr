@@ -1,3 +1,32 @@
+# site settings
+title: Coccin'ailes
+subtitle: Du Pays d'Allevard
+email: ml@fatbsd.com #bureau@coccinailes.fr
+description: Club de Parapente et de Vol Libre du Pays d'Allevard
+baseurl:
+url:
+author: Jérôme LOYET
+street_address: Place de la mairie
+city: Allevard
+state:
+zip_code: 38580
+country: France
+phone:
 
+# social settings
+500px_url:
+facebook_url: https://www.facebook.com/groups/coccinailes.fr/
+github_url: 
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url: 
 
-theme: minima
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
