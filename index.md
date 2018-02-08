@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Page d'Accueil
+title: Accueil
 weight: 0
 ---

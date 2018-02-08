@@ -4,9 +4,9 @@
 <nav id="nav">
 	<ul class="links">
 	{% assign pages = site.pages | sort:"weight" %}
-	{% for page in site.pages %}
-		{% if page.menu != false %}
-			<li{% if current_page == page.url %} class="active"{% endif %}><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+	{% for page in pages %}
+		{% if page.menu != false and page.title %}
+			<li{% if current_page == page.url %} class="active"{% endif %}><a class="nowarp" href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 		{% endif %}
 	{% endfor %}
 	</ul>

@@ -29,4 +29,4 @@ twitter_url:
 markdown: kramdown
 
 sass:
-  style: compressed
+#  style: compressed
