@@ -37,6 +37,7 @@
 				margin-bottom: 0;
 				padding-left: 0;
 				text-transform: uppercase;
+				white-space: nowrap;
 
 				li {
 					display: block;
@@ -51,7 +52,6 @@
 						font-size: 0.8rem;
 						outline: none;
 						padding: 0 2rem;
-						white-space: nowrap;
 
 						&:hover {
 							color: inherit !important;
