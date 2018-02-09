@@ -3,6 +3,7 @@ layout: page
 title: Météo Locale
 #image: toto.jpg
 weight: 3
+icon: fa-cloud
 ---
 
 ## Balise FFVL à Malatrait

@@ -6,7 +6,9 @@
 	{% assign pages = site.pages | sort:"weight" %}
 	{% for page in pages %}
 		{% if page.menu != false and page.title %}
-			<li{% if current_page == page.url %} class="active"{% endif %}><a class="nowarp" href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+			<li{% if current_page == page.url %} class="active"{% endif %}>
+				<a{% if page.icon %} class="icon {{page.icon}}"{% endif %} class="nowarp" href="{{ page.url | absolute_url }}">{% if page.icon %}&nbsp;{% endif %}{{ page.title }}</a>
+			</li>
 		{% endif %}
 	{% endfor %}
 	</ul>

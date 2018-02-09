@@ -3,6 +3,7 @@ layout: page
 title: Nos sites de vol
 #image: toto.jpg
 weight: 2
+icon: fa-rocket
 ---
 Le club des Coccin'ailes vous accueil sur les sites de vol libre qu'il entretient. Ils sont au nombre de 10 et permettent de voler avec toutes les orientations et conditions de vols, en été comme en hiver. Du petit plouf du matin, au départs en cross, aux restits du soir mais aussi du soaring et un bocal plein de surprises.
 
