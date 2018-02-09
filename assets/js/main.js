@@ -265,4 +265,8 @@
 
 	});
 
+	$(".youtube-container").each(function(index) {
+		$('<iframe>', { src: $(this).attr('data-url'), frameborder: 0, allowfullscreen: ''}).appendTo($(this));
+	});
+	
 })(jQuery);
