@@ -27,7 +27,14 @@
 		<section class="alt">
 			<h3>Address</h3>
 			<p>{{ site.street_address }}<br />
-{{ site.zip_code }} {{ site.city }}</p>
+{% if site.street_address_2 %}
+{{ site.street_address_2 }}<br />
+{% endif %}
+{{ site.zip_code }} {{ site.city }}
+{% if site.country %}
+<br />{{ site.country }}
+{% endif %}
+</p>
 		</section>
 
 		{% if site.phone %}
@@ -36,11 +43,6 @@
 			<p><a href="#">{{ site.phone }}</a></p>
 		</section>
 		{% endif %}
-
-		<section>
-		<h3>Email</h3>
-			<p><a href="#">{{ site.email }}</a></p>
-		</section>
 
 		<section>
 			<h3>Social</h3>

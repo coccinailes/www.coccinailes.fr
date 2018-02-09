@@ -6,7 +6,4 @@ weight: 6
 ---
 Vous avez des questions, vous souhaitez nous rejoindre, voler sur nos sites, nous prévenir d'évènements à venir dans la région ... laissez nous un message avec vos coordonnées et nous nous efforcerons de vous répondre le plus rapidement possibles.
 
-{% for asset in site.static_files %}
-<p>{{ asset.path | jsonify }}</p>
-{% endfor %}
 {% include contact.html %}
