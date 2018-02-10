@@ -41,6 +41,11 @@
 			text-transform: uppercase;
 			visibility: visible;
 
+			img {
+				width: auto;
+				height: 2.25rem;
+			}
+
 			&:hover {
 				border-color: _palette(invert, accent) !important;
 				color: _palette(invert, accent) !important;
