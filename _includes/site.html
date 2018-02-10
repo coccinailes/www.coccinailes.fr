@@ -1,2 +1,4 @@
-<h2>{{include.name}}</h2>
+<header>
+	<h2>{{include.name}}</h2>
+</header>
 <img src="{{ include.name | downcase | replace: "'", "" | replace: " ", "-" | replace: "é", "e" | append: ".jpg" | prepend: "assets/sites/" | relative_url }}" />
