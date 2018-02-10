@@ -24,6 +24,11 @@
 		z-index: 1;
 		min-height: 100vh;
 
+		background-image: url("/assets/images/logo_without_text_transparent_dark.png");
+		background-repeat: no-repeat;
+		background-size: 20%;
+		background-origin: content-box;
+
 		h1 {
 			font-size: 5rem;
 			line-height: 1;
