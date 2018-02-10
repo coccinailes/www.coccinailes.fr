@@ -1,14 +1,27 @@
 ---
-layout: page
+layout: sites
 title: Nos sites de vol
 #image: toto.jpg
 weight: 2
 icon: fa-rocket
 ---
+
+<section class="post">
+	<header class="major">
+		{% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+		{% if page.description %}<p>{{ page.description }}</p>{% endif %}
+	</header>
 Le club des Coccin'ailes vous accueil sur les sites de vol libre qu'il entretient. Ils sont au nombre de 10 et permettent de voler avec toutes les orientations et conditions de vols, en été comme en hiver. Du petit plouf du matin, au départs en cross, aux restits du soir mais aussi du soaring et un bocal plein de surprises.
 
-Vous pouvez retrouver l'ensemble des informations concernant nos sites sur [le site de la FFVL](http://federation.ffvl.fr/sites_pratique/voir/682).
-# Décollages
+Vous pouvez retrouver l'ensemble des informations concernant nos sites sur <a href="http://federation.ffvl.fr/sites_pratique/voir/682">le site de la FFVL</a>.
+
+</section>
+
+<section class="post">
+	<header>
+		<h1>Décollages</h1>
+	</header>
+</section>
 <section class="posts">
 {% include site.html name="Malatrait" %}
 {% include site.html name="Deco Sud" %}
@@ -18,7 +31,12 @@ Vous pouvez retrouver l'ensemble des informations concernant nos sites sur [le s
 {% include site.html name="Bajin" %}
 </section>
 
-# Atterrissages
+<section class="post">
+	<header>
+		<h1>Atterrissages</h1>
+	</header>
+</section>
+
 <section class="posts">
 {% include site.html name="La Digue" %}
 {% include site.html name="Saint-Pierre" %}
