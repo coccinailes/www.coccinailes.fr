@@ -2,7 +2,7 @@
 title: Les plagnes
 image: les-plagnes.png
 weight: 4
-orientation: "sud-ouest"
+orientation: "sud ouest"
 altitude: 2100
 denivele: 1600
 dicton: "Plus beau que ça ? J'y crois pas !"

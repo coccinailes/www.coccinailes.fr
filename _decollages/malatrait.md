@@ -2,7 +2,7 @@
 title: Malatrait
 image: malatrait.png
 weight: 1
-orientation: "nord-ouest"
+orientation: "nord ouest"
 altitude: 1450
 denivele: 1000
 dicton: "Par vent de nord, le veyton c'est pour les cons&nbsp;!"
