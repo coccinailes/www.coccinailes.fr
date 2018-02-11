@@ -1,10 +1,13 @@
 ---
 title: Pré-rond
-image: pre-rond.jpg
+image: pre-rond.png
 weight: 5
+orientation: "Nord"
+altitude: 1600
+denivele: 1100
+dicton: "Pré-rond, c'est comme les bons coins à champignons !"
+remarques: "Se garer sur le parking de pré-rond et se préparer de l'autre côté de la route, dans l'épingle."
+dangers: "Décollage étroit et pentu avec présence de souches."
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+Décollage Nord, peu utilisé mais très prisé des locaux pour un meilleur placement lors des départs de cross.

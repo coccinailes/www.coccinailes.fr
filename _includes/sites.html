@@ -10,9 +10,51 @@
 	<article>
 		<header>
 			<h2>{{ item.title }}</h2>
-			<img class="image fit" src="{{ item.image | prepend: "assets/sites/" | relative_url }}" />
+			<a class="image fit" style="cursor: default;"><img src="{{ item.image | prepend: "assets/sites/" | relative_url }}" /></a>
 		</header>
+		<p>
 		{{ item.content }}
+		</p>
+		<table class="sites">
+			<tbody>
+				{% if item.orientation %}
+				<tr>
+					<td><span class="fas fa-home fa-fw"></span>&nbsp;Orientation</td>
+					<td>{{ item.orientation }}</td>
+				</tr>
+				{% endif %}
+				{% if item.altitude %}
+				<tr>
+					<td><span class="fas fa-arrow-up fa-fw"></span>&nbsp;Altitude</td>
+					<td>{{ item.altitude }}m</td>
+				</tr>
+				{% endif %}
+				{% if item.denivele %}
+				<tr>
+					<td><span class="fas fa-arrows-alt-v fa-fw"></span>&nbsp;Denivele</td>
+					<td>{{ item.denivele }}m</td>
+				</tr>
+				{% endif %}
+				{% if item.dicton %}
+				<tr>
+					<td><span class="fas fa-quote-right fa-fw"></span>&nbsp;Dicton</td>
+					<td><blockquote>{{ item.dicton }}</blockquote></td>
+				</tr>
+				{% endif %}
+				{% if item.dangers %}
+				<tr>
+					<td><span class="fas fa-exclamation-triangle fa-fw"></span>&nbsp;Dangers</td>
+					<td><p>{{ item.dangers }}</p></td>
+				</tr>
+				{% endif %}
+				{% if item.remarques %}
+				<tr>
+					<td><span class="fas fa-info fa-fw"></span>&nbsp;Infos</td>
+					<td><p>{{ item.remarques }}</p></td>
+				</tr>
+				{% endif %}
+			</tbody>
+		</table>
 	</article>
 {% endfor %}
 </section>

@@ -1,10 +1,11 @@
 ---
 title: La Digue
-image: la-digue.jpg
+image: la-digue.png
 weight: 0
+altitude: 500
+dicton: "Au delà de la digue, t'es pas digne !"
+remarques: "Se garer sur le parking de l'école, sur le parking de carrefour ou sur le parking du skate-park."
+dangers: "En nord, ne pas dépasser la digue et si c'est trop fort, ne pas hésiter à aller poser à Saint-Pierre."
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+Atterrissage principal d'Allevard. PTU main gauche en Nord, main droite en Sud.

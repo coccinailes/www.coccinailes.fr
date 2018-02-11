@@ -1,10 +1,12 @@
 ---
 title: Super-Collet
-image: super-collet.jpg
+image: super-collet.png
 weight: 3
+altitude: 1650
+remarques: "Atterrissage fermé lorsqu'il n'y a pas de neige au sol."
+dangers: "Atterrissage encaissé, sous le vent de toutes les orientations (particulièrement en Sud), peu être très turbulant et dangereux."
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+Atterrissage de la station pendant l'hiver UNIQUEMENT.
+
+TOUJOURS poser en remontant la pente !

@@ -1,10 +1,13 @@
 ---
 title: Déco Sud
-image: deco-sud.jpg
+image: deco-sud.png
 weight: 2
+orientation: "sud"
+altitude: 1550
+denivele: 1100
+dicton: "Quand arrive le TGV dans les sapins, il est temps de sonner le tocsin&nbsp;!"
+remarques: "Préparer votre aile sur le plat."
+dangers: "Par vent de sud marqué, rester abrité derrière Montouvrard avant de basculer en vallée."
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+Décollage très prisé par vent de sud car le site est protégé par rapport aux autres sites alentours.

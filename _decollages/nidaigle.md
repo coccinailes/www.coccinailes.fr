@@ -1,10 +1,12 @@
 ---
 title: Nid d'aigle
-image: nid-daigle.jpg
+image: nid-daigle.png
 weight: 6
+orientation: "nord-ouest"
+altitude: 1670
+denivele: 1170
+remarques: "Site fermé durant l'exploitation du domaine skiable car le décollage se trouve sur une piste."
+dangers: "Attention au télésiège à gauche du décollage mais aussi aux souches et arbustes dans la pente."
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+Décollage "nature" accessible très facilement à pieds. Une très belle vue pour profiter des restit's du soir en été. 

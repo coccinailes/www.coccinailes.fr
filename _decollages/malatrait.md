@@ -1,10 +1,12 @@
 ---
 title: Malatrait
-image: malatrait.jpg
+image: malatrait.png
 weight: 1
+orientation: "nord-ouest"
+altitude: 1450
+denivele: 1000
+dicton: "Par vent de nord, le veyton c'est pour les cons&nbsp;!"
+remarques: "Merci de se garer sur le parking de la station."
+dangers: "Par forte brise et/ou vent de nord, ne pas dépasser l'antenne pour eviter l'effet venturi à l'entrée de la vallée du veyton."
 ---
-
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+Orienté de ouest à nord. Site très prisé pour son accessibilité et les restits en vallée les soirs d'été.

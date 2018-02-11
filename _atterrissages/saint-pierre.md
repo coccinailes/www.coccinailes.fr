@@ -1,10 +1,10 @@
 ---
 title: Saint-Pierre
-image: saint-pierre.jpg
+image: saint-pierre.png
 weight: 1
+altitude: 500
+remarques: "Se garer au bord de la route, le long du stade."
+dangers: "En régime de Nord, attention à votre hauteur par rapport à la route."
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+Grand atterrissage sans pièges aérologiques particuliers. Utilisé pour les vols du matin depuis le décollage de Bajin mais aussi en secours quand il y a trop de brise à l'atterrissage de la digue.

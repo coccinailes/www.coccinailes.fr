@@ -1,10 +1,11 @@
 ---
 title: La mirande
-image: mirande.jpg
+image: mirande.png
 weight: 2
+altitude: 400
+dicton: "Si tu cherches le sens du vent, sache qu'il vient du Nord !"
+remarques: "si l'herbe est haute, ne pliez pas sur le terrain (foins)."
+dangers: "Présence de gradient, sol en forme de vague et terrain sous le vent des arbres."
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+Atterrissage de secours quand il y a trop de Sud pour rejoindre l'atterrissage de la Digue.
