@@ -5,7 +5,7 @@
 			<input type="hidden" name="_language" value="fr" />
 			<input type="hidden" name="_subject" value="Nouveau message sur le site web des {{ site.title }} !" />
 			<div class="field">
-				<label for="name">Name</label>
+				<label for="name">Nom</label>
 				<input type="text" name="name" id="name" />
 			</div>
 			<div class="field">
@@ -17,7 +17,7 @@
 				<textarea name="message" id="message" rows="3"></textarea>
 			</div>
 			<ul class="actions">
-				<li><input type="submit" value="Send Message" /></li>
+				<li><input type="submit" value="Envoyer le message" /></li>
 			</ul>
 		</form>
 	</section>
@@ -25,7 +25,7 @@
 	<section class="split contact">
 
 		<section class="alt">
-			<h3>Address</h3>
+			<h3>Adresse</h3>
 			<p>{{ site.street_address }}<br />
 {% if site.street_address_2 %}
 {{ site.street_address_2 }}<br />
@@ -39,7 +39,7 @@
 
 		{% if site.phone %}
 		<section>
-			<h3>Phone</h3>
+			<h3>Téléphone</h3>
 			<p><a href="#">{{ site.phone }}</a></p>
 		</section>
 		{% endif %}
