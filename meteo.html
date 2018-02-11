@@ -1,0 +1,57 @@
+---
+layout: raw
+title: Météo Locale
+weight: 3
+icon: fa-cloud
+---
+
+<section class="post">
+	<header class="major">
+		{% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+		{% if page.description %}<p>{{ page.description }}</p>{% endif %}
+    </header>
+</section>
+
+<section class="posts">
+	<article>
+		<header>
+			<h2>Balise FFVL à Malatrait</h2>
+		</header>
+		<a class="image fit" href="http://www.balisemeteo.com/balise.php?idBalise=12"><img src="http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=12" /></a>
+	</article>
+
+	<article>
+		<header>
+			<h2>PiouPiou au déco sud</h2>
+		</header>
+		<a class="image fit" href="https://pioupiou.com/fr/170"><img src="{{ "assets/images/pioupiou.png" | relative_url }}" />PiouPiou n°170</a>
+	</article>
+
+	<article>
+		<header>
+			<h2>Radar Pluie Grenoble</h2>
+		</header>
+		<a class="image fit" href="http://www.meteo-grenoble.com/suivi-des-pluies.html"><img src="http://www.infoclimat.fr/api/VStXYgIuBT5Va1N6BzZUPAJpAH0GZFZiUTNcLQ4xWmsBfAUwVmVWZQYyAjdUZFU0UjZQMgZlUmAEZwhjDjo%3D/radar/centre_est?05ea8311dcdb9e1d62379db3a56c113f" /></a>
+	</article>
+
+	<article>
+		<header>
+			<h2>Meteoblue</h2>
+		</header>
+		<iframe class="image fit" src="https://www.meteoblue.com/fr/meteo/widget/daily/allevard-les-bains_france_3038132?geoloc=fixed&amp;days=4&amp;tempunit=CELSIUS&amp;windunit=KILOMETER_PER_HOUR&amp;coloured=coloured&amp;pictoicon=1&amp;maxtemperature=1&amp;mintemperature=1&amp;windspeed=1&amp;winddirection=1&amp;precipitation=1&amp;precipitationprobability=1&amp;spot=1&amp;layout=light" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups" style="width: 216px;height: 367px" frameborder="0"></iframe>
+	</article>
+
+	<article>
+		<header>
+			<h2>Meteo-Parapente</h2>
+		</header>
+		<a class="image fit" href="https://meteo-parapente.com/#/Is%C3%A8re/Allevard-Malatrait/45.3937,6.1066,11"><img src="{{ "assets/images/meteo-parapente.png" | relative_url }}" />Les prévisions sur le site de Malatrait</a>
+	</article>
+
+	<article>
+		<header>
+			<h2>Meteociel</h2>
+		</header>
+		<a class="image fit" href="http://www.meteociel.fr/previsions/13191/allevard.htm"><img src="{{ "assets/images/meteociel.png" | relative_url }}" />Les prévisions à Allevard</a>
+	</article>
+</section>
