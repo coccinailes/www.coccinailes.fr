@@ -16,6 +16,10 @@ phone:
 title_logo_left: assets/images/logo_without_text_transparent_dark.png
 title_logo_right: assets/images/logo_without_text_transparent_dark.png
 
+collections:
+- decollages
+- atterrissages
+
 # social settings
 500px_url:
 youtube_url: https://www.youtube.com/channel/UCWCtfjqP8renxPCQgUVazkA

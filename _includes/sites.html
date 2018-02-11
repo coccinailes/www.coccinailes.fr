@@ -1,0 +1,19 @@
+{% if include.sites %}
+<section class="post">
+	<header class="major">
+		<h1>{{ include.title }}</h1>
+	</header>
+</section>
+<section class="posts">
+{% assign items = include.sites | sort: 'weight' %}
+{% for item in items %}
+	<article>
+		<header>
+			<h2>{{ item.title }}</h2>
+			<img class="image fit" src="{{ item.image | prepend: "assets/sites/" | relative_url }}" />
+		</header>
+		{{ item.content }}
+	</article>
+{% endfor %}
+</section>
+{% endif %}
