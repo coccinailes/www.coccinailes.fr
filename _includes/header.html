@@ -1,4 +1,8 @@
 		<!-- Header -->
 		<header id="header">
-				<a href="{{ site.url }}" class="logo"><img src="{{ 'assets/images/logo_without_text_transparent.png' | relative_url }}" />&nbsp;{{site.title}}&nbsp;<img src="{{ 'assets/images/logo_without_text_transparent.png' | relative_url }}" /></a>
+				<a href="{{ site.url }}" class="logo">
+					{% if site.title_logo_left %}<img src="{{ site.title_logo_left | relative_url }}" />&nbsp;{% endif %}
+					{{site.title}}
+					{% if site.title_logo_right %}&nbsp;<img src="{{ site.title_logo_right | relative_url }}" />{% endif %}
+				</a>
 		</header>

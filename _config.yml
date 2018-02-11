@@ -13,6 +13,8 @@ state:
 zip_code: 38580
 country: France
 phone:
+title_logo_left: assets/images/logo_without_text_transparent_dark.png
+title_logo_right: assets/images/logo_without_text_transparent_dark.png
 
 # social settings
 500px_url:
