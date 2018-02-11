@@ -36,6 +36,9 @@ twitter_url:
 # build settings
 markdown: kramdown
 exclude: [CNAME, Gemfile*]
+plugins:
+  - jekyll-sitemap
 
 sass:
-#  style: compressed
+  style: compressed
+

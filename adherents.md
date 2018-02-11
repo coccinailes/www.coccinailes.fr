@@ -4,6 +4,7 @@ title: Adhérents
 #image: toto.jpg
 weight: 4
 icon: fa-user
+sitemap: false
 ---
 
 Vous êtes déjà adhérent ou vous venez tout juste de nous rejoindre. Vous trouverez sur cette page toutes les informations nécessaires pour recevoir les informations du club, communiquer avec le bureau ou les autres membres du club, prévoir une sortie, poser des questions, ...

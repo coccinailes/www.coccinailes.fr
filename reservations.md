@@ -4,6 +4,7 @@ title: Réservations
 #image: toto.jpg
 weight: 7
 icon: fa-list
+sitemap: false
 ---
 
 Les adhérents pourront, prochainement, réserver le matériel que le club met à disposition de ses membres:
