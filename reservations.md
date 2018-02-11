@@ -22,4 +22,4 @@ Les adhérents pourront, prochainement, réserver le matériel que le club met �
 
 *En attendant, contactez le bureau pour toute demande d'emprunt de matériel.*
 
-![En travaux]({{ "assets/images/travaux.png" || relative_url }})
+![En travaux]({{ "assets/images/travaux.png" | relative_url }})
