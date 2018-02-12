@@ -10,4 +10,4 @@ remarques: "Se garer sur le parking de pré-rond et se préparer de l'autre côt
 dangers: "Décollage étroit et pentu avec présence de souches."
 ---
 
-Décollage Nord, peu utilisé mais très prisé des locaux pour un meilleur placement lors des départs de cross.
+Décollage Nord, peu utilisé, mais très prisé des locaux pour un meilleur placement lors des départs de cross.
