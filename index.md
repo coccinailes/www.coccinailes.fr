@@ -4,6 +4,7 @@ title: Le Club
 #image: assets/images/logo_for_dark.png
 weight: 1
 icon: fa-users
+intro: true
 ---
 
 <a class="image left" style="max-width: 20%;"><img src="{{ "assets/images/logo_without_text_transparent_small.png" | relative_url}}" alt=""></a>
