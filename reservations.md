@@ -7,7 +7,7 @@ icon: fa-list
 sitemap: false
 ---
 
-Les adhérents pourront, prochainement, réserver le matériel que le club met à disposition de ses membres:
+Les adhérents pourront, prochainement, réserver, en ligne, le matériel que le club met à disposition de ses membres:
 - Bi Golden 2 42m²
 - Bi Alpamayo 39m²
 - Sellette passager moussebag
