@@ -31,7 +31,8 @@
 	$palette: (
 		wrapper-bg:			#212931,
 
-		bg:					#ffffff,
+//		bg:					#ffffff,
+		bg:                 rgba(255, 255, 255, 0.925),
 		fg:					#212931,
 		fg-bold:			#212931,
 		fg-light:			mix(#212931, #ffffff, 50%),
