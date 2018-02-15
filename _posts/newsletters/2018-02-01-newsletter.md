@@ -1,6 +1,6 @@
 ---
 layout: newsletter
-title: Newsletter de Février 2018
+title: Bulletin de Février 2018
 ---
 
 ## Assemblée générale
