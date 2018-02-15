@@ -40,6 +40,8 @@ pinterest_url:
 slack_url:
 twitter_url: 
 
+google_analytics: UA-114191466-1
+
 # build settings
 markdown: kramdown
 exclude: [CNAME, Gemfile*]
