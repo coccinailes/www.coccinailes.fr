@@ -63,7 +63,8 @@ a[href^="x-apple-data-detectors:"], a[x-apple-data-detectors] {color: inherit !i
 </tr>
 <tr>
 <td class="container-padding footer-text" align="left" style="font-family:Helvetica, Arial, sans-serif;font-size:12px;line-height:16px;color:{{ footer_color }};padding-left:24px;padding-right:24px">
-<br><br><strong>Coccin'ailes du Pays d'Allevard</strong><br><a href="{{ site.url }}" style="color:#aaaaaa">{{ site.url }}</a><br><br><br>
+<br><br><strong>Coccin'ailes du Pays d'Allevard</strong><br><a href="{{ site.url }}" style="text-decoration:none;color:#aaaaaa">{{ site.url }}</a><br><br><br>
+<a style="text-decoration:none;color:#aaaaaa;" href="http://api.coccinailes.fr/envoi_mail_bulletin.php?source={{ page.url | absolute_url | cgi_escape }}">Envoyer un mail de test au bureau</a>
 </td>
 </tr>
 </table>
