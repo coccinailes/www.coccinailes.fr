@@ -14,3 +14,4 @@ Vous êtes déjà adhérent ou vous venez tout juste de nous rejoindre. Vous tro
 - Un groupe whatsapp existe, pour le rejoindre demander au bureau.
 - Le [groupe facebook du club]({{ site.facebook_url }}).
 - Nous avons un compte météo-blue, demandez au bureau les identifiants.
+- La [page youtube du club]({{ site.youtube_url }}).
