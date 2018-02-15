@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Médiatèque
+title: Médias
 #image: toto.jpg
 weight: 5
 icon: fa-video
