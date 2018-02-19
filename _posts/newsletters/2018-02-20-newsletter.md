@@ -44,6 +44,7 @@ Un nouveau site web a été mis en ligne. Il se veut très simple, il ne contien
 
 Sur le site web, [une page dédiée aux membres du club]({{ "adherents.html" | absolute_url }}) rappelant les moyens de communication disponibles (mailing liste, email du bureau, site web, facebook, youtube et whatsapp).
 
+## Mot de la fin
 Pour terminer, ce bulletin d'information du club est le premier à vous être envoyé. Nous vous communiquerons les informations importantes par ce biais là.
 
 **Le bureau et le club vous souhaite à tous une excellente saison à venir !**
