@@ -47,4 +47,4 @@ Sur le site web, [une page dédiée aux membres du club]({{ "adherents.html" | a
 ## Mot de la fin
 Pour terminer, ce bulletin d'information du club est le premier à vous être envoyé. Nous vous communiquerons les informations importantes par ce biais là.
 
-**Le bureau et le club vous souhaite à tous une excellente saison à venir !**
+**Le bureau et le club vous souhaite à tous une excellente saison 2018 !**
