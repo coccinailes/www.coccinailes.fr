@@ -21,7 +21,8 @@ Lors de l'AG de décembre, le bureau directeur de l'association a été renouvel
 
 ## Dates clés en 2018
 Cette années les évènements suivants sont prévus:
-- Fin Mars: **Journée d'entretien des sites** et **pliage des secours** (plus d'infos à venir).
+- Vendredis 30 Mars et 20 Avril: **pliage des secours** de 18h à 22h à la pleiade.
+- Une journée en mars ou en avril: **Journée d'entretien des sites**.
 - 28/29 Avril: **Compétition Sport** organisée par Jules. La première réunion des bénévole a eu lieu le 11 Février.
 - Automne: **Week-end Bi-place**
 - Automne: **Sortie Club** prévue dans le Sud pour trouver de bonnes conditions et partager ensemble ce moment.
