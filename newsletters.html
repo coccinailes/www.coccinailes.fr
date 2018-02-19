@@ -29,7 +29,10 @@ icon: fa-newspaper
 				{% when '12' %}Decembre
 			{% endcase %}
 			{% endcapture %}
+<!--
 			<li><a href="{{ post.url | absolute_url }}">Bulletin d'information de {{ mm }} {{ post.date | date: '%Y' }}</a></li>
+-->
+			<li><a href="{{ post.url | absolute_url }}"><i>{{ mm }} {{ post.date | date: '%Y' }}</i> <strong>{{ post.title }}</strong></a></li>
 	{% endfor %}
 	</ul>
 	<br />
