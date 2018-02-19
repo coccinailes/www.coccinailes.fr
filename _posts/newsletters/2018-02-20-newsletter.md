@@ -43,3 +43,7 @@ Lors de l'AG, il a été décidé qu'un quart du budget (environ 1200€) servir
 Un nouveau site web a été mis en ligne. Il se veut très simple, il ne contient que les informations pertinentes, il est compatible avec tous les appareils (ordinateurs, téléphones, ...) et est plus facile à mettre à jour. Pour rappel, l'adresse du site web du club est [{{ site.url }}]({{ site.url}}).
 
 Sur le site web, [une page dédiée aux membres du club]({{ "adherents.html" | absolute_url }}) rappelant les moyens de communication disponibles (mailing liste, email du bureau, site web, facebook, youtube et whatsapp).
+
+Pour terminer, ce bulletin d'information du club est le premier à vous être envoyé. Nous vous communiquerons les informations importantes par ce biais là.
+
+**Le bureau et le club vous souhaite à tous une excellente saison à venir !**
