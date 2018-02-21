@@ -15,3 +15,4 @@ Vous êtes déjà adhérent ou vous venez tout juste de nous rejoindre. Vous tro
 - Le [groupe facebook du club]({{ site.facebook_url }}).
 - Nous avons un compte météo-blue, demandez au bureau les identifiants.
 - La [page youtube du club]({{ site.youtube_url }}).
+- Un [ensemble de documentations, cours et guides](https://drive.google.com/drive/folders/0B7PxwmgdmAE3R1g0Tjl1ajd1cEk?usp=sharing).
