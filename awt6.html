@@ -2,8 +2,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -122,72 +122,105 @@ body {font-family: 'Istok Web', sans-serif;background: url("http://www.fengshuid
 .hero p.year i {font-size: 14px;vertical-align: middle;}
 #bracket {overflow:hidden;background-color: #e1e1e1;background-color:rgba(225,225,225,0.9);padding-top: 20px;font-size: 12px;padding: 40px 0;}
 .container {
-	max-width: 1100px;
-	max-width: 95%;
-	margin: 0 auto;
-	display:block;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction:row;
-	flex-direction: row;
-	flex-wrap: nowrap;
+  max-width: 1100px;
+  max-width: 95%;
+  margin: 0 auto;
+  display:block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction:row;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
 }
 .col {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-around;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 .col:nth-child(odd) { flex: 1; }
 .col:nth-child(even) { flex: 5;}
 
-ul.match {
-	text-align: center;
-	list-style-type: none;
-	padding: 0;
+.row {
+  height: 60px;
 }
 
-ul.match li {
-	background-color: white;
-	border-left: 0.25rem solid #858585;
-	border-right: 0.25rem solid #858585;
-	color: #858585;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	font-size: 1.5em;
-	border-radius: 0.25rem;
+.match {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  height: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-ul.match li:nth-child(1) {
-	border-bottom: thin solid #f0f2f2;
+.match * {
+  background-color: white;
+  border-left: 0.25rem solid #858585;
+  border-right: 0.25rem solid #858585;
+  color: #858585;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  font-size: 1.2em;
+  border-radius: 0.25rem;
 }
 
-ul.match li.winner {
-	color: #60c645;
-	border-left: 0.25rem solid #60c645;
-	border-right: 0.25rem solid #60c645;
-	font-weight: bold;
+.match *:nth-child(1) {
+  border-bottom: thin solid #f0f2f2;
 }
 
-ul.match li.loser {
-	color: #dc563f;
-	border-left: 0.25rem solid #dc563f;
-	border-right: 0.25rem solid #dc563f;
+.match .winner {
+  color: #60c645;
+  border-left: 0.25rem solid #60c645;
+  border-right: 0.25rem solid #60c645;
+  font-weight: bold;
+}
+
+.match .loser {
+  color: #dc563f;
+  border-left: 0.25rem solid #dc563f;
+  border-right: 0.25rem solid #dc563f;
 }
 
 .row:nth-child(1) { 
-	color: #2C7399;
-	text-transform: uppercase;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 1.5em;
+  color: #2C7399;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2em;
 }
 
+.connector {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.connector i {
+  font-size: 2em;
+  margin: auto;
+  color: #858585;
+}
+
+.connector i.bottom-right {transform: rotate(90deg);}
+.connector i.bottom-left {transform: rotate(180deg);}
+.connector i.top-left {transform: rotate(270deg);}
+.connector i.top-right {transform: rotate(0deg);}
+.connector i.right {transform: rotate(45deg);}
+.connector i.bottom {transform: rotate(135deg);}
+.connector i.left {transform: rotate(225deg);}
+.connector i.top {transform: rotate(315deg);}
+
+.connector i.winner {color: #60c645;}
+.connector i.loser {color: #dc563f;}
 
 /*
 .col:nth-child(1) { background-color: rgb(0,0,0); color: white;}
@@ -222,210 +255,220 @@ ul.match li.loser {
 </head>
 <body>
   <header class="hero">
-  	<div class="hero-wrap">
-    	<p class="intro" id="intro">AWT</p>
-     	<h1 id="headline">Finals</h1>
-     	<p class="year"><i class="fa fa-star"></i> 2018 <i class="fa fa-star"></i></p>
-     	<p>At Sonchaux AcroShow</p>
-   	</div>
+    <div class="hero-wrap">
+      <p class="intro" id="intro">AWT</p>
+       <h1 id="headline">Finals</h1>
+       <p class="year"><i class="fa fa-star"></i> 2018 <i class="fa fa-star"></i></p>
+       <p>At Sonchaux AcroShow</p>
+     </div>
   </header>
 
 
   <section id="bracket">
-  	<div class="container">
-			<div class="col">
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>Quarter Finals</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="winner">Théo Deblic</li>
-						<li class="loser">Jack Pimblett</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="loser">Victor Carrera</li>
-						<li class="winner">Axel Fornasier</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>Semi Finals</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="winner">Théo Deblic</li>
-						<li class="loser">Axel Fornasier</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="winner">Jack Pimblett</li>
-						<li class="loser">Victor Carrera</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>Finals</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="winner">Théo Deblic</li>
-						<li class="loser">Tim Alongi</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="loser">Axel Fornasier</li>
-						<li class="winner">François Ragolski</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="loser">Jack Pimblett</li>
-						<li class="winner">Rafael Goberna</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="winner">Victor Carrera</li>
-						<li class="loser">Horacio Llorens</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>Semi Finals</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="loser">François Ragolski</li>
-						<li class="winner">Tim Alongi</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="winner">Rafael Goberna</li>
-						<li class="loser">Horacio Llorens</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>Quarter Finals</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="winner">François Ragolski</li>
-						<li class="loser">Rafael Goberna</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row">
-					<ul class="match">
-						<li class="loser">Horacio Llorens</li>
-						<li class="winner">Tim Alongi</li>
-					</ul>
-				</div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-			<div class="col">
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-				<div class="row"><p>&nbsp;</p></div>
-			</div>
-	  </div>
+    <div class="container">
+      <div class="col">
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-left loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-right loser"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>Quarter Finals</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <div class="match">
+            <div class="winner">Théo Deblic</div>
+            <div class="loser">Jack Pimblett</div>
+          </div>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="loser">Victor Carrera</li>
+            <li class="winner">Axel Fornasier</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector">
+          <i class="fas fa-location-arrow right loser"></i>
+          <i class="fas fa-location-arrow right loser"></i>
+          <i class="fas fa-location-arrow right loser"></i>
+          <i class="fas fa-location-arrow right loser"></i>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-right winner"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow top-right winner"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow right loser"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>Semi Finals</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="winner">Théo Deblic</li>
+            <li class="loser">Axel Fornasier</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="winner">Jack Pimblett</li>
+            <li class="loser">Victor Carrera</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow top-right winner"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-right loser"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow top-right winner"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-right loser"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>Finals</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="winner">Théo Deblic</li>
+            <li class="loser">Tim Alongi</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="loser">Axel Fornasier</li>
+            <li class="winner">François Ragolski</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="loser">Jack Pimblett</li>
+            <li class="winner">Rafael Goberna</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="winner">Victor Carrera</li>
+            <li class="loser">Horacio Llorens</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow top-left winner"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-left loser"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow top-left winner"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-left loser"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>Semi Finals</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="loser">François Ragolski</li>
+            <li class="winner">Tim Alongi</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="winner">Rafael Goberna</li>
+            <li class="loser">Horacio Llorens</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-left winner"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow top-left winner"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow left loser"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>Quarter Finals</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="winner">François Ragolski</li>
+            <li class="loser">Rafael Goberna</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row">
+          <ul class="match">
+            <li class="loser">Horacio Llorens</li>
+            <li class="winner">Tim Alongi</li>
+          </ul>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector">
+          <i class="fas fa-location-arrow left loser"></i>
+          <i class="fas fa-location-arrow left loser"></i>
+          <i class="fas fa-location-arrow left loser"></i>
+          <i class="fas fa-location-arrow left loser"></i>
+        </div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+      <div class="col">
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-right loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom loser"></i></div>
+        <div class="row connector"><i class="fas fa-location-arrow bottom-left loser"></i></div>
+        <div class="row"><p>&nbsp;</p></div>
+        <div class="row"><p>&nbsp;</p></div>
+      </div>
+    </div>
   </section>
   <section class="share">
       <div class="share-wrap">
