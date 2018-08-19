@@ -3,12 +3,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous" />
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/papaparse.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.5/svg.min.js"></script>
@@ -122,7 +123,12 @@ body {font-family: 'Istok Web', sans-serif;background: url("http://www.fengshuid
   height: auto;
 }
 
+section.page {
+  min-height: 100vh;
+}
+
 text {
+  font-family: Ubuntu;
   text-anchor: middle;
   fill: #a5a5a5;
 }
@@ -218,138 +224,157 @@ marker {
   fill: #a5a5a5;
 }
 
+a:hover {
+}
+
   </style>
   <title>AWT 2018 Finals</title>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-wrap">
-      <p class="intro" id="intro">AWT</p>
-       <h1 id="headline">Finals</h1>
-       <p class="year"><i class="fa fa-star"></i> 2018 <i class="fa fa-star"></i></p>
-       <p>At Sonchaux AcroShow</p>
-     </div>
-  </header>
-
-  <header class="hero">
-    <p class="section">Groups & Pilots</p>
-  </header>
-  <section class="results" id="groups">
-    <!-- Group A -->
-    <div>
-      <h1>Group A</h1>
-      <p><span class="pilot" id="pilot-A1">Pilot A1</span></p>
-      <p><span class="pilot" id="pilot-A2">Pilot A2</span></p>
-      <p><span class="pilot" id="pilot-A3">Pilot A3</span></p>
-      <p><span class="pilot" id="pilot-A4">Pilot A4</span></p>
-    </div>
-    <!-- Group C -->
-    <div>
-      <h1>Group C</h1>
-      <p><span class="pilot" id="pilot-C1">Group C1</span></p>
-      <p><span class="pilot" id="pilot-C2">Group C2</span></p>
-      <p><span class="pilot" id="pilot-C3">Group C3</span></p>
-      <p><span class="pilot" id="pilot-C4">Group C4</span></p>
-    </div>
-    <!-- Group R -->
-    <div>
-      <h1>Group R</h1>
-      <p><span class="pilot" id="pilot-R1">Group R1</span></p>
-      <p><span class="pilot" id="pilot-R2">Group R2</span></p>
-      <p><span class="pilot" id="pilot-R3">Group R3</span></p>
-      <p><span class="pilot" id="pilot-R4">Group R4</span></p>
-    </div>
-    <!-- Group O -->
-    <div>
-      <h1>Group O</h1>
-      <p><span class="pilot" id="pilot-O1">Group O1</span></p>
-      <p><span class="pilot" id="pilot-O2">Group O2</span></p>
-      <p><span class="pilot" id="pilot-O3">Group O3</span></p>
-      <p><span class="pilot" id="pilot-O4">Group O4</span></p>
-    </div>
+  <section class="page" id="page1">
+    <header class="hero">
+      <div class="hero-wrap">
+        <p class="intro" id="intro">AWT</p>
+        <h1 id="headline">Finals</h1>
+        <p class="year"><i class="fa fa-star"></i> 2018 <i class="fa fa-star"></i></p>
+        <p>At Sonchaux AcroShow</p>
+        <p><a href="#page2" ><i class="fas fa-arrow-alt-circle-down"></i></a></p>
+       </div>
+    </header>
   </section>
 
-  <header class="hero">
-    <p class="section">Qualification Runs</p>
-  </header>
-  <section class="bracket" id="qualifications">
-    <div class="svg" id="svg-qualifications"></div>
+  <section class="page" id="page2">
+    <header class="hero">
+      <p class="section"><a href="#page1" ><i class="fas fa-arrow-alt-circle-up"></i></a>Groups & Pilots<a href="#page3" ><i class="fas fa-arrow-alt-circle-down"></i></a></p>
+    </header>
+    <section class="results" id="groups">
+      <!-- Group A -->
+      <div>
+        <h1>Group A</h1>
+        <p><span class="pilot" id="pilot-A1">Pilot A1</span></p>
+        <p><span class="pilot" id="pilot-A2">Pilot A2</span></p>
+        <p><span class="pilot" id="pilot-A3">Pilot A3</span></p>
+        <p><span class="pilot" id="pilot-A4">Pilot A4</span></p>
+      </div>
+      <!-- Group C -->
+      <div>
+        <h1>Group C</h1>
+        <p><span class="pilot" id="pilot-C1">Group C1</span></p>
+        <p><span class="pilot" id="pilot-C2">Group C2</span></p>
+        <p><span class="pilot" id="pilot-C3">Group C3</span></p>
+        <p><span class="pilot" id="pilot-C4">Group C4</span></p>
+      </div>
+      <!-- Group R -->
+      <div>
+        <h1>Group R</h1>
+        <p><span class="pilot" id="pilot-R1">Group R1</span></p>
+        <p><span class="pilot" id="pilot-R2">Group R2</span></p>
+        <p><span class="pilot" id="pilot-R3">Group R3</span></p>
+        <p><span class="pilot" id="pilot-R4">Group R4</span></p>
+      </div>
+      <!-- Group O -->
+      <div>
+        <h1>Group O</h1>
+        <p><span class="pilot" id="pilot-O1">Group O1</span></p>
+        <p><span class="pilot" id="pilot-O2">Group O2</span></p>
+        <p><span class="pilot" id="pilot-O3">Group O3</span></p>
+        <p><span class="pilot" id="pilot-O4">Group O4</span></p>
+      </div>
+    </section>
   </section>
 
-  <header class="hero">
-    <p class="section">Qualification Results</p>
-  </header>
-  <section class="results" id="results-qlf">
-    <!-- Group A -->
-    <div>
-      <h1>Group A</h1>
-      <p><span class="place">1</span><span class="pilot" id="result-A1">1st Group A</span></p>
-      <p><span class="place">2</span><span class="pilot" id="result-A2">Group A</span></p>
-      <p><span class="place">3</span><span class="pilot" id="result-A3">3rd Group A</span></p>
-      <p><span class="place">4</span><span class="pilot" id="result-A4">4th Group A</span></p>
-    </div>
-    <!-- Group C -->
-    <div>
-      <h1>Group C</h1>
-      <p><span class="place">1</span><span class="pilot" id="result-C1">1st Group C</span></p>
-      <p><span class="place">2</span><span class="pilot" id="result-C2">Group C</span></p>
-      <p><span class="place">3</span><span class="pilot" id="result-C3">3rd Group C</span></p>
-      <p><span class="place">4</span><span class="pilot" id="result-C4">4th Group C</span></p>
-    </div>
-    <!-- Group R -->
-    <div>
-      <h1>Group R</h1>
-      <p><span class="place">1</span><span class="pilot" id="result-R1">1st Group R</span></p>
-      <p><span class="place">2</span><span class="pilot" id="result-R2">2nd Group R</span></p>
-      <p><span class="place">3</span><span class="pilot" id="result-R3">3rd Group R</span></p>
-      <p><span class="place">4</span><span class="pilot" id="result-R4">4th Group R</span></p>
-    </div>
-    <!-- Group O -->
-    <div>
-      <h1>Group O</h1>
-      <p><span class="place">1</span><span class="pilot" id="result-O1">1st Group O</span></p>
-      <p><span class="place">2</span><span class="pilot" id="result-O2">2nd Group O</span></p>
-      <p><span class="place">3</span><span class="pilot" id="result-O3">3rd Group O</span></p>
-      <p><span class="place">4</span><span class="pilot" id="result-O4">4th Group O</span></p>
-    </div>
+  <section class="page" id="page3">
+    <header class="hero">
+      <p class="section"><a href="#page2" ><i class="fas fa-arrow-alt-circle-up"></i></a>Qualification Runs<a href="#page4" ><i class="fas fa-arrow-alt-circle-down"></i></a></p>
+    </header>
+    <section class="bracket" id="qualifications">
+      <div class="svg" id="svg-qualifications"></div>
+    </section>
   </section>
 
-  <header class="hero">
-    <p class="section">1th to 8th Finals</p>
-  </header>
-  <section class="bracket" id="finals-1-8">
-      <div class="svg" id="svg-finals-1-8"></div>
+  <section class="page" id="page4">
+    <header class="hero">
+      <p class="section"><a href="#page3" ><i class="fas fa-arrow-alt-circle-up"></i></a>Qualification Results<a href="#page5" ><i class="fas fa-arrow-alt-circle-down"></i></a></p>
+    </header>
+    <section class="results" id="results-qlf">
+      <!-- Group A -->
+      <div>
+        <h1>Group A</h1>
+        <p><span class="place">1</span><span class="pilot" id="result-A1">1st Group A</span></p>
+        <p><span class="place">2</span><span class="pilot" id="result-A2">Group A</span></p>
+        <p><span class="place">3</span><span class="pilot" id="result-A3">3rd Group A</span></p>
+        <p><span class="place">4</span><span class="pilot" id="result-A4">4th Group A</span></p>
+      </div>
+      <!-- Group C -->
+      <div>
+        <h1>Group C</h1>
+        <p><span class="place">1</span><span class="pilot" id="result-C1">1st Group C</span></p>
+        <p><span class="place">2</span><span class="pilot" id="result-C2">Group C</span></p>
+        <p><span class="place">3</span><span class="pilot" id="result-C3">3rd Group C</span></p>
+        <p><span class="place">4</span><span class="pilot" id="result-C4">4th Group C</span></p>
+      </div>
+      <!-- Group R -->
+      <div>
+        <h1>Group R</h1>
+        <p><span class="place">1</span><span class="pilot" id="result-R1">1st Group R</span></p>
+        <p><span class="place">2</span><span class="pilot" id="result-R2">2nd Group R</span></p>
+        <p><span class="place">3</span><span class="pilot" id="result-R3">3rd Group R</span></p>
+        <p><span class="place">4</span><span class="pilot" id="result-R4">4th Group R</span></p>
+      </div>
+      <!-- Group O -->
+      <div>
+        <h1>Group O</h1>
+        <p><span class="place">1</span><span class="pilot" id="result-O1">1st Group O</span></p>
+        <p><span class="place">2</span><span class="pilot" id="result-O2">2nd Group O</span></p>
+        <p><span class="place">3</span><span class="pilot" id="result-O3">3rd Group O</span></p>
+        <p><span class="place">4</span><span class="pilot" id="result-O4">4th Group O</span></p>
+      </div>
+    </section>
   </section>
 
-  <header class="hero">
-    <p class="section">9th to 16th Finals</p>
-  </header>
-  <section class="bracket" id="finals-9-16">
+  <section class="page" id="page5">
+    <header class="hero">
+      <p class="section"><a href="#page4" ><i class="fas fa-arrow-alt-circle-up"></i></a>1st to 8th Finals<a href="#page6" ><i class="fas fa-arrow-alt-circle-down"></i></a></p>
+    </header>
+    <section class="bracket" id="finals-1-8">
+        <div class="svg" id="svg-finals-1-8"></div>
+    </section>
   </section>
 
-  <header class="hero">
-    <p class="section">Final results</p>
-  </header>
-  <section class="results" id="results_finals">
-    <div>
-    <p><span class="place">1</span><span class="pilot" id="result-p1">Winner F1</span></p>
-    <p><span class="place">2</span><span class="pilot" id="result-p2">Loser F1</span></p>
-    <p><span class="place">3</span><span class="pilot" id="result-p3">Winner F3</span></p>
-    <p><span class="place">4</span><span class="pilot" id="result-p4">Loser F3</span></p>
-    <p><span class="place">5</span><span class="pilot" id="result-p5">Winner F5</span></p>
-    <p><span class="place">6</span><span class="pilot" id="result-p6">Loser F5</span></p>
-    <p><span class="place">7</span><span class="pilot" id="result-p7">Winner F7</span></p>
-    <p><span class="place">8</span><span class="pilot" id="result-p8">Loser F7</span></p>
-    <p><span class="place">9</span><span class="pilot" id="result-p9">Winner F9</span></p>
-    <p><span class="place">10</span><span class="pilot" id="result-p10">Loser F9</span></p>
-    <p><span class="place">11</span><span class="pilot" id="result-p11">Winner F11</span></p>
-    <p><span class="place">12</span><span class="pilot" id="result-p12">Loser F11</span></p>
-    <p><span class="place">13</span><span class="pilot" id="result-p13">Winner F13</span></p>
-    <p><span class="place">14</span><span class="pilot" id="result-p14">Loser F13</span></p>
-    <p><span class="place">15</span><span class="pilot" id="result-p15">Winner F15</span></p>
-    <p><span class="place">16</span><span class="pilot" id="result-p16">Loser F15</span></p>
-    </div>
+  <section class="page" id="page6">
+    <header class="hero">
+      <p class="section"><a href="#page5" ><i class="fas fa-arrow-alt-circle-up"></i></a>9th to 16th Finals<a href="#page7" ><i class="fas fa-arrow-alt-circle-down"></i></a></p>
+    </header>
+    <section class="bracket" id="finals-9-16">
+    </section>
   </section>
+
+  <section class="page" id="page7">
+    <header class="hero">
+      <p class="section"><a href="#page6" ><i class="fas fa-arrow-alt-circle-up"></i></a>Final results<a href="#page6" ><i class="fas fa-arrow-alt-circle-up"></i></a></p>
+    </header>
+    <section class="results" id="results_finals">
+      <div>
+        <p><span class="place">1</span><span class="pilot" id="result-p1">Winner F1</span></p>
+        <p><span class="place">2</span><span class="pilot" id="result-p2">Loser F1</span></p>
+        <p><span class="place">3</span><span class="pilot" id="result-p3">Winner F3</span></p>
+        <p><span class="place">4</span><span class="pilot" id="result-p4">Loser F3</span></p>
+        <p><span class="place">5</span><span class="pilot" id="result-p5">Winner F5</span></p>
+        <p><span class="place">6</span><span class="pilot" id="result-p6">Loser F5</span></p>
+        <p><span class="place">7</span><span class="pilot" id="result-p7">Winner F7</span></p>
+        <p><span class="place">8</span><span class="pilot" id="result-p8">Loser F7</span></p>
+        <p><span class="place">9</span><span class="pilot" id="result-p9">Winner F9</span></p>
+        <p><span class="place">10</span><span class="pilot" id="result-p10">Loser F9</span></p>
+        <p><span class="place">11</span><span class="pilot" id="result-p11">Winner F11</span></p>
+        <p><span class="place">12</span><span class="pilot" id="result-p12">Loser F11</span></p>
+        <p><span class="place">13</span><span class="pilot" id="result-p13">Winner F13</span></p>
+        <p><span class="place">14</span><span class="pilot" id="result-p14">Loser F13</span></p>
+        <p><span class="place">15</span><span class="pilot" id="result-p15">Winner F15</span></p>
+        <p><span class="place">16</span><span class="pilot" id="result-p16">Loser F15</span></p>
+      </div>
+    </section>
+  </section>
+
   <script>
 
 var final_runs = {};
