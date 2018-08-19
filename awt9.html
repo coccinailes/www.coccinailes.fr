@@ -8,6 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/papaparse.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.5/svg.min.js"></script>
@@ -152,11 +153,11 @@ path {
 }
 
 path.winner {
-  stroke: green;
+  stroke: #1e442d;
 }
 rect.winner {
-  stroke: green;
-  fill: green;
+  stroke: #1e442d;
+  fill: #5cca87;
   fill-opacity: 1;
 }
 text.winner {
@@ -165,11 +166,11 @@ text.winner {
 }
 
 path.loser {
-  stroke: red;
+  stroke: #b92323;
 }
 rect.loser {
-  stroke: red;
-  fill: red;
+  stroke: #b92323;;
+  fill: #8c2828;
   fill-opacity: 1;
 }
 text.loser {
@@ -178,6 +179,7 @@ text.loser {
 }
 
 .results {
+  overflow:hidden;background-color: #e1e1e1;background-color:rgba(225,225,225,0.3);padding-top: 20px;font-size: 12px;padding: 40px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -185,24 +187,35 @@ text.loser {
 
 .results p {
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .results h1 {
   font-color: orange;
-  font-size: 5vw;
+  font-size: 3vw;
+  margin: 0 0;
 }
 
 .results span.place {
-  font-size: 4vw;
+  font-size: 2vw;
+  margin-right: 1vw;
 }
 
 .results span.pilot {
+/*
   vertical-align: 10%;
-  font-size: 3vw;
+  text-align: center;
+*/
+  font-size: 1vw;
 }
 
 #2results_finals {
   flex-direction: column;
+}
+
+marker {
+  fill: #a5a5a5;
 }
 
   </style>
@@ -481,6 +494,16 @@ function conn(svg, start_group, start_position, end_group, end_position) {
 
   var line = svg.path(path);
 
+  line.marker('end', 20, 20,function(add) {
+    add.circle(5).center(4, 6)
+    add.circle(5).center(8, 8)
+    add.circle(5).center(12, 10)
+    add.circle(5).center(8, 12)
+    add.circle(5).center(4, 14)
+    this.size(5,5);
+//    add.polygon('2,0 4,8 6,0');
+  });
+
   return line;
 }
 
@@ -490,8 +513,10 @@ function update_battle(battle, p1, s1, p2, s2) {
   // convert string to int otherwise comparison will be wrong
   s1 = parseInt(s1);
   s2 = parseInt(s2);
+  if (isNaN(s1)) s1 = -1;
+  if (isNaN(s2)) s2 = -1;
 
-  if (battle.attr('id').match(/^A/)) console.log("Update " + battle.attr('id') + " " + p1 + "/" + s1 + "  " + p2 + "/" + s2);
+//  if (battle.attr('id').match(/^A/)) console.log("Update " + battle.attr('id') + " " + p1 + "/" + s1 + "  " + p2 + "/" + s2);
 
   var t1 = battle.select('.pilot1').first().text(p1);
   var b1 = battle.select('.border1').first();
@@ -501,6 +526,14 @@ function update_battle(battle, p1, s1, p2, s2) {
 
   var b = battle.select('.border').first();
 
+  if (s1 < 0 || s2 < 0) {
+    t1.removeClass("loser").removeClass("winner");
+    b1.removeClass("loser").removeClass("winner");
+
+    t2.removeClass("loser").removeClass("winner");
+    b2.removeClass("loser").removeClass("winner");
+    return;
+  }
 
   if (s1 > s2) {
     t1.removeClass("loser").addClass("winner");
@@ -520,9 +553,10 @@ function update_battle(battle, p1, s1, p2, s2) {
 var counter = 1;
 // handle periodic fectching data from google drive
 function run_loop(interval) {
-  var url = "https://docs.google.com/a/loyet.net/spreadsheets/d/1si-AjcSVcKUKqHUqWiqmqdt2xPS1XMMPbjS8Fl3niaQ/export?gid=1164619229&format=csv";
+//  var url = "https://docs.google.com/a/loyet.net/spreadsheets/d/1si-AjcSVcKUKqHUqWiqmqdt2xPS1XMMPbjS8Fl3niaQ/export?gid=1164619229&format=csv";
+  var url = "https://docs.google.com/a/loyet.net/spreadsheets/d/1si-AjcSVcKUKqHUqWiqmqdt2xPS1XMMPbjS8Fl3niaQ/export?gid=1783068895&format=csv";
 
-  console.log("refreshing data for the " + counter++ + "th time in " + Math.round(interval/1000) + "s");
+//  console.log("refreshing data for the " + counter++ + "th time in " + Math.round(interval/1000) + "s");
 
   window.setTimeout(function() {
     Papa.parse(url, {
@@ -530,6 +564,8 @@ function run_loop(interval) {
       complete: function(results, file) {
         //console.log("Parsing complete:", results, file);
         var d = results.data;
+
+        $('p.section').addClass('animated').addClass('bounce');
 
         // ** Groups **
         // Group A
@@ -570,7 +606,7 @@ function run_loop(interval) {
             if (i>=2 && i<=3) y = 4;
             if (i>=4) y = 7;
 
-            if (l == 'A') console.log(l + (i+1), x + (i%2)*2, y, x + (i%2)*2, y+1, x + (i%2*2) + 1, y, x + (i%2)*2 + 1, y+1);
+//            if (l == 'A') console.log(l + (i+1), x + (i%2)*2, y, x + (i%2)*2, y+1, x + (i%2*2) + 1, y, x + (i%2)*2 + 1, y+1);
             update_battle(qlf_runs[l + (i+1)], d[x + (i%2)*2][y], d[x + (i%2)*2][y+1], d[x + (i%2*2) + 1][y], d[x + (i%2)*2 + 1][y+1]);
           }
         }
@@ -750,11 +786,6 @@ var F3 = battle_clone(battle, 'F3', (finals.width()-battle_width)/2, battle_sep_
   // remove as it's not necessary anymore
   battle.remove();
 
-/*
-  var marker = finals.marker(14,14,function(add) {
-    add.polygon('0,0 7,14 14,0').fill('#ff0000');
-  });
-*/
 
   // draw connections
   conn(finals, Q1, "right", S1, "top-left").addClass("winner");
