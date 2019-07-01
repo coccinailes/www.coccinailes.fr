@@ -11,7 +11,7 @@ Vous êtes déjà adhérent ou vous venez tout juste de nous rejoindre. Vous tro
 
 - Mailing liste du groupe qui permet l'échange de messages par email: **[les-coccs@googlegroups.com](mailto:les-coccs@googlegroups.com)**. Si vous n'êtes pas déjà inscrit, demandez au bureau de vous ajouter.
 - Pour contacter le bureau: **[bureau@coccinailes.fr](mailto:bureau@coccinailes.fr)**.
-- Un groupe **whatsapp** existe. Pour le rejoindre utilisez [ce lien](https://chat.whatsapp.com/Kkiel69tWMt1yYoSIHqGdf).
+- Un groupe **whatsapp** existe. Pour le rejoindre utilisez **[ce lien](https://chat.whatsapp.com/Kkiel69tWMt1yYoSIHqGdf)**.
 - Le **[groupe facebook du club]({{ site.facebook_url }})**.
 - Nous avons un **compte météo-blue**, demandez au bureau les identifiants.
 - La **[page youtube du club]({{ site.youtube_url }})**.
