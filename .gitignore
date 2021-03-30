@@ -2,3 +2,4 @@ site/
 Gemfile.lock
 *.swp
 .jekyll-cache/
+_site/
