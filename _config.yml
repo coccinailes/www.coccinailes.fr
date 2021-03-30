@@ -52,3 +52,9 @@ plugins:
 sass:
   style: compressed
 
+defaults:
+  -
+    scope:
+      path: "bulletins-meteo"
+    values:
+      layout: "meteo"

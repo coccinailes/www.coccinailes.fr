@@ -4,54 +4,48 @@ title: Météo
 weight: 3
 icon: fa-cloud
 ---
+<article>
+	<section>
+		<h3>Liens vers des sites météo utiles</h3>
+		<ul>
+			<li><a target="_blank" href="http://www.balisemeteo.com/balise.php?idBalise=12">Balise FFVL à malatrait</a></li>
+			<li><a target="_blank" href="https://pioupiou.com/fr/170">PiouPiou au Déco Sud</a></li>
+			<li><a target="_blank" href="https://www.spotair.mobi/">SpotAir</a></li>
+			<li><a target="_blank" href="https://meteo-parapente.com/#/Is%C3%A8re/Allevard-Malatrait/45.3937,6.1066,11">meteo-parapente</a></li>
+<li><a target="_blank" href="https://www.meteoblue.com/fr/meteo/semaine/allevard-les-bains_france_3038132">Meteoblue</a></li>
+<li><a target="_blank" href="http://www.meteociel.fr/previsions/13191/allevard.htm">Meteociel</a></li>
+			<li><a target="_blank" href="http://www.meteo-grenoble.com/suivi-des-pluies.html">Radar de pluies</a></li>
+		</ul>
+	</section>
 
-<section class="post">
-	<header class="major">
-		{% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-		{% if page.description %}<p>{{ page.description }}</p>{% endif %}
-    </header>
-</section>
-
-<section class="posts">
-	<article>
-		<header>
-			<h2>Balise FFVL à Malatrait</h2>
-		</header>
-		<a class="image fit" target="_blank" href="http://www.balisemeteo.com/balise.php?idBalise=12"><img src="http://www.balisemeteo.com/graphs/graph_vent.php?idBalise=12" /></a>
-	</article>
-
-	<article>
-		<header>
-			<h2>PiouPiou au déco sud</h2>
-		</header>
-		<a class="image fit" target="_blank" href="https://pioupiou.com/fr/170"><img src="{{ "assets/images/pioupiou.png" | relative_url }}" />PiouPiou n°170</a>
-	</article>
-
-	<article>
-		<header>
-			<h2>Radar Pluie Grenoble</h2>
-		</header>
-		<a class="image fit" target="_blank" href="http://www.meteo-grenoble.com/suivi-des-pluies.html"><img src="http://www.infoclimat.fr/api/VStXYgIuBT5Va1N6BzZUPAJpAH0GZFZiUTNcLQ4xWmsBfAUwVmVWZQYyAjdUZFU0UjZQMgZlUmAEZwhjDjo%3D/radar/centre_est?05ea8311dcdb9e1d62379db3a56c113f" /></a>
-	</article>
-
-	<article>
-		<header>
-			<h2>Meteoblue</h2>
-		</header>
-		<iframe class="image fit" src="https://www.meteoblue.com/fr/meteo/widget/daily/allevard-les-bains_france_3038132?geoloc=fixed&amp;days=4&amp;tempunit=CELSIUS&amp;windunit=KILOMETER_PER_HOUR&amp;coloured=coloured&amp;pictoicon=1&amp;maxtemperature=1&amp;mintemperature=1&amp;windspeed=1&amp;winddirection=1&amp;precipitation=1&amp;precipitationprobability=1&amp;spot=1&amp;layout=light" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups" style="width: 216px;height: 367px" frameborder="0"></iframe>
-	</article>
-
-	<article>
-		<header>
-			<h2>Meteo-Parapente</h2>
-		</header>
-		<a class="image fit" target="_blank" href="https://meteo-parapente.com/#/Is%C3%A8re/Allevard-Malatrait/45.3937,6.1066,11"><img src="{{ "assets/images/meteo-parapente.png" | relative_url }}" />Les prévisions sur le site de Malatrait</a>
-	</article>
-
-	<article>
-		<header>
-			<h2>Meteociel</h2>
-		</header>
-		<a class="image fit" target="_blank" href="http://www.meteociel.fr/previsions/13191/allevard.htm"><img src="{{ "assets/images/meteociel.png" | relative_url }}" />Les prévisions à Allevard</a>
-	</article>
-</section>
+	<section>
+		<h3>Bulletins météo</h3>
+		<p>
+			Le club mets à disposition ses bulletins météo personnalisés.
+		</p>
+		<ul>
+		{% assign posts = site.posts | where_exp:"item", "item.categories contains 'bulletins-meteo'" %}
+		{% for post in posts %}
+			{% assign m = post.date | date: "%-m" %}
+			{% capture mm %}
+			{% case m %}
+				{% when '1' %}Janvier
+				{% when '2' %}Février
+				{% when '3' %}Mars
+				{% when '4' %}Avril
+				{% when '5' %}Mai
+				{% when '6' %}Juin
+				{% when '7' %}Juillet
+				{% when '8' %}Aaoût
+				{% when '9' %}Septembre
+				{% when '10' %}Octobre
+				{% when '11' %}Novembre
+				{% when '12' %}Decembre
+			{% endcase %}
+			{% endcapture %}
+			<li><a href="{{ post.url | absolute_url }}"><strong>{{ post.date | date: '%d' }} {{ mm }} {{ post.date | date: '%Y' }}</strong></a></li>
+		{% endfor %}
+		</ul>
+		<br />
+	</section>
+</article>
