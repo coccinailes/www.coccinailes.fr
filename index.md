@@ -60,11 +60,10 @@ Le bureau directeur est en charge, pour la durée de son mandat, de l'animation 
 
 * * *
 
-| Président | Romain Laby |
-| Vice-Président | Jules Croibier |
+| Président | Francois KRATZEISEN |
 | Trésorier | Jérôme Loyet |
-| Vice-Trésorier | Jean-Pierre Bages |
-| Secrétaire | Sophie Allemant |
-| &nbsp; | Guillaume Cornet |
-| &nbsp; | Camille Jauffret |
-| &nbsp; | Thomas Lebe |
+| Secrétaire | Jules TRIOT |
+| &nbsp; | Gilles BONAZZA |
+| &nbsp; | Thomas BRESSE |
+| &nbsp; | Jean-jacques FRANCIOSI |
+| &nbsp; | Sami KHALIL |
